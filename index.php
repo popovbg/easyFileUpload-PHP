@@ -2,7 +2,7 @@
 
 if (isset($_POST['submit'])) {
     if (empty($_POST['fileName']) || $_FILES['file']['size'] == 0) {
-        echo 'Something went wrsssng!';
+        echo 'Something went wrong!';
     } else {
         $fileUpload = new upload();
         $fileUpload->fileInfo();
